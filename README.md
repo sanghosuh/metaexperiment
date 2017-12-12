@@ -1,2 +1,2 @@
-# mexperiment
+# metaexperiment
 Interface for metacognition experiment
