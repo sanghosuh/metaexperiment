@@ -1,0 +1,87 @@
+<html>
+	<head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	  <!-- Import main.css -->
+      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+      <!--Import jQuery (before materialize.js) -->
+      <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Import javascript variables which contains HTML	 -->
+      <script type="text/javascript" src="js/helper.js"></script>
+
+	  <!-- Update Contents in body after loading everything -->
+      <script type="text/javascript">
+      	var formattedIdxArray = shuffle(idxArray);
+
+		$(document).ready(function(){
+			// console.log(formattedIdxArray[0]);
+			changeMetaQuestion(formattedIdxArray[0]);
+		    $('.modal').modal();
+		});
+      </script>
+
+	</head>
+
+	<body>
+
+		<!-- header -->
+		<div id="header" class="row z-depth-2 red lighten-2">
+			<!-- quit button -->
+			<div class="col s6">				
+				<a id="quit-btn" class="waves-effect waves-light red btn modal-trigger left-align" href="#modal1"><i class="material-icons left">cloud</i>QUIT</a>
+			</div>
+
+			<!-- progress indicator -->
+			<div class="col s6">
+				<h6 id="progress-indicator" class="right-align" style="color:white">Task 1/30</h6>
+			</div>
+		</div>
+
+		<!-- body -->
+		<div id="body" class="row">
+			<form action="/" class="col s12">				
+				<div class="row col s12" style="padding-bottom: 3em">
+					<!-- left panel (transcription img + text input) -->
+					<div id="transcription-panel" class="col s12 m6 l6"></div>
+					<!-- right panel (metacognitive question form) -->
+					<div id="metacognition-panel" class="col s12 m6 l6"></div>
+				</div>
+
+
+				<!-- navbar -->
+				<div id="navbar" class="row col s12 section center-align"></div>
+			</form>
+		</div>	
+
+	  <!-- Import materialize.js	 -->
+      <script type="text/javascript" src="js/materialize.min.js"></script>	
+      <!-- Append HTML to header -->
+      <script type="text/javascript" src="js/header.js"></script>	
+	  <!-- Append HTML to body -->
+      <script type="text/javascript" src="js/body.js"></script>
+	  <!-- Add click functions on buttons -->
+	  <script type="text/javascript" src="js/button.js"></script>
+
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+		    <div class="modal-content">
+		      <h4>Note</h4>
+		      <p>If you do not complete more than 10 tasks, there will be no base payment for minimal participation.</p>
+		    </div>
+		    <div class="modal-footer">
+	    	  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Continue to work</a>
+		      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">QUIT</a>
+		    </div>
+		  </div>			
+		</div>
+	</body>
+
+</html>
+
+

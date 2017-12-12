@@ -1,0 +1,33 @@
+
+
+img {
+	width:95%;
+	display:block; /*prevents image from changing the overall size in the transcription panel*/
+}
+
+#header{
+	padding:1.5em;
+}
+
+#transcription-panel, #metacognition-panel {
+	padding: 1 em 1em;	
+}
+
+
+#metacognitive-question, .transcription-mark, #progress-indicator {
+	/*font-weight:bold;*/
+	font-size:1.4em;
+}
+
+.modal-content {
+	font-size:1.2em;
+}
+
+.img-panel {
+float:left; /*prevents image from changing the overall size in the transcription panel*/
+}
+
+
+.img-panel:not(.active) {
+	display:none;  /*do not display if it is not a corresponding image*/
+}	
